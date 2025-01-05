@@ -1,5 +1,6 @@
 :local bottoken "<bottoken>"
 :local chatid "<chatid>" 
+:local upsname "ups1"
 
 :global flagonbatt;
 
@@ -10,7 +11,7 @@
     :set flagonbatt 0
     }
 
-/system ups monitor ups1 once do={
+/system ups monitor $upsname once do={
     :set online $"on-line";
     }
 
