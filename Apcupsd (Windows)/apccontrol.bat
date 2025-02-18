@@ -115,12 +115,12 @@ GOTO :done
 
 :onbattery
    %POPUP% "Power failure. Running on UPS batteries."
-   powershell.exe -Command ".\Send-TelegramNotification.ps1 -Message 'Power failure. Running on UPS batteries. %F0%9F%94%8B'"
+   powershell.exe -Command ".\Send-TelegramNotification.ps1 -Message 'Power failure. Running on UPS batteries. %%F0%%9F%%94%%8B'"
    GOTO :done
 
 :offbattery
    %POPUP% "Power has returned. No longer running on UPS batteries."
-   powershell.exe -Command ".\Send-TelegramNotification.ps1 -Message 'Power has returned. No longer running on UPS batteries. %F0%9F%94%8C'"
+   powershell.exe -Command ".\Send-TelegramNotification.ps1 -Message 'Power has returned. No longer running on UPS batteries. %%F0%%9F%%94%%8C'"
    GOTO :done
 
 :mainsback
